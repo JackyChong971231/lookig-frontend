@@ -1,0 +1,217 @@
+.homeContainer > h5 {
+    position: relative;
+    display: inline;
+    padding-left: 5%;
+    margin-top: 10px;
+    /* margin-bottom: 5%; */
+    /* padding-top: 5%; */
+    /* font-weight: bold; */
+}
+
+.homeContainer > p {
+    position: absolute;
+    right: 5%;
+    display: inline;
+    margin-bottom: 5%;
+    /* padding-top: 5%; */
+    /* font-weight: bold; */
+}
+
+.homeContainer > Link {
+  position: absolute;
+  right: 5%;
+  display: inline;
+  margin-bottom: 5%;
+  /* padding-top: 5%; */
+  /* font-weight: bold; */
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshowContainer {
+  position: relative;
+  transform: translate(-50%, 0%);
+  left: 50%;
+  width: 90%;
+  height: 20vh;
+  /* margin: auto; */
+  margin-top: 30px;
+  background-color: rgb(224, 207, 182);
+  border-radius: 20px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  transition: 0.5s;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  outline: none;
+  text-decoration: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  /* color: #f2f2f2; */
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  /* color: #f2f2f2; */
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.mostBrowsedCategoriesContainer {
+    position: relative;
+    height: fit-content;
+    width: 90%;
+    transform: translate(-50%, 0%);
+    left: 50%;
+    margin-top: 20px;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: none;
+    /* border: solid; */
+}
+
+.mostBrowsedCategory {
+  position: relative;
+  min-width: 25%;
+  /* height: fit-content; */
+
+
+  /* border: solid; */
+}
+
+.mostBrowsedCategory > div {
+  position: relative;
+  transform: translate(-50%, 0%);
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: solid 1px;
+}
+
+.mostBrowsedCategory > p {
+  position: relative;
+  margin-top: 5px;
+  transform: translate(-50%, 0%);
+  left: 50%;
+  text-align: center;
+  /* border: solid; */
+}
+
+.mostXXXshopsContainer {
+    position: relative;
+    height: 35vh;
+    width: 100%;
+    /* margin-top: 5%; */
+    margin-bottom: 5%;
+    /* border: solid; */
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: visible;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.mostXXXshopsContainer::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari and Opera */
+}
+
+.igProfile {
+    position: relative;
+    border-radius: 20px;
+    -moz-box-shadow: 0px 0px 15px 1px rgba(102, 102, 102, 0.5);
+    -webkit-box-shadow: 0px 0px 15px 1px rgba(102, 102, 102, 0.5);
+    box-shadow: 0px 0px 15px 1px rgba(102, 102, 102, 0.5);  
+    margin-inline: 20px;
+    top: 5%;
+    height: 90%;
+    margin-top: 5px;
+    /* line-height: 35px; */
+    min-width: 80vw;
+    max-width: 80vw;
+    /* padding-right: 40px; */
+    background-color: rgb(224, 224, 224);
+    overflow: hidden;
+}
+
+.igProfile > div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /* border: solid; */
+}

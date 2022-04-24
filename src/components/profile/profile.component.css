@@ -1,0 +1,113 @@
+.accountInfo {
+    position: relative;
+    padding-top: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.proPic{
+    padding-right: 5%;
+}
+
+.accountDetails > p {
+    font-size:smaller;
+}
+
+.accountOptions {
+    position: relative;
+    padding-top: 5%;
+    width: 300px;
+    /* border: solid;
+    border-width: 2px; */
+}
+
+.accountOptions > button {
+    position: relative;
+    width: 100%;
+    color: rgb(71, 71, 71);
+    text-align: left;
+    height: 60px;
+    background-color: white;
+    border: none;
+    border-top: solid 1px;
+}
+
+.accountOptions > a {
+    position: relative;
+    width: 100%;
+    color: rgb(71, 71, 71);
+    text-align: left;
+    height: 60px;
+    background-color: white;
+    border: none;
+    border-top: solid 1px;
+}
+
+.accountOptions > p {
+    padding-top: 10%;
+    border-top: solid 1px;
+    border-color: rgb(71, 71, 71);
+    color: rgb(146, 146, 146);
+    text-align: center;
+}
+
+.buttons{
+    color: rgb(71, 71, 71);
+    text-decoration: none;
+}
+
+.rightProfileContainer {
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.rightProfileContainer > header{
+    position: relative;
+    height: 50px;
+    background-color: white;
+    margin-bottom: 5px;
+    border-bottom: solid 5px;
+    border-bottom-color: rgb(240, 240, 240);
+}
+
+.rightProfileContainer > body {
+    position: relative;
+    background-color: rgb(240, 240, 240);
+}
+
+.rightProfileContainer > header > h1{
+position: relative;
+display: inline;
+vertical-align: middle;
+width: fit-content;
+height: 50px;
+margin-left: 10px;
+font-size: medium;
+}
+
+.rightProfileContainerBackBtn {
+position: relative;
+display: inline;
+background-color: transparent;
+border: none;
+left: 0px;
+top: 0px;
+padding-left: 20px;
+height: 100%;
+width: 50px;
+vertical-align: middle;
+}
+
+.rightProfileContainerBackBtn > img {
+position: absolute;
+height: 15px;
+transform: translate(-50%, -50%);
+top: 50%;
+left: 50%;
+}

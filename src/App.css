@@ -1,0 +1,89 @@
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+.card-container.card {
+  max-width: 350px !important;
+  padding: 40px 40px;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px;
+  padding: 20px 25px 30px;
+  margin: 0 auto 25px;
+  margin-top: 50px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  -moz-box-shadow: 0px 0px 50px 1px rgba(102, 102, 102, 0.5);
+  -webkit-box-shadow: 0px 0px 50px 1px rgba(102, 102, 102, 0.5);
+  box-shadow: 0px 0px 50px 1px rgba(102, 102, 102, 0.5);
+}
+
+.form-group {
+  margin: 10px;
+}
+
+.profile-img-card {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 10px;
+  display: block;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.outerMostContainer {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+}
+
+.navbar.top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 40px;
+}
+
+.navbar.bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+}
+
+.midContainer {
+  position: relative;
+  width: 100%;
+  top: 40px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  min-height: calc(100vh - 90px);
+  padding-bottom: 70px;
+  /* border: solid;
+  border-width: 2px; */
+}
+
+.dummyContainer {
+  position: relative;
+  height: 80px;
+}
+
+.popUpLikeContainer {
+  position: fixed;
+  top: 50px;
+  width: 100%;
+  /* transform: translate(-50%,0%);
+  left: 50%; */
+  /* border: solid;
+  border-width: 2px; */
+}
+
+.nav-item {
+  margin-inline: 20px;
+}

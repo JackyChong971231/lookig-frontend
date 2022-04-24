@@ -1,0 +1,127 @@
+.instagramListViewContainer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+    background-color: white;
+    padding: 10px;
+    transition: 0.5s;
+    /* border: solid; */
+}
+
+.instagramDataConatiner {
+    position: relative;
+    display: flex;
+    top: 0px;
+    left: 0px;
+    width: fit-content;
+    height: fit-content;
+    margin-bottom: 10px;
+    /* border: solid; */
+}
+
+.instagramProfilePicture {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    margin-right: 10px;
+    border: solid 2px;
+}
+
+.instagramProfileUsername {
+    position: relative;
+    display: inline-block;
+    font-size: large;
+    /* border: solid; */
+}
+
+.instagramProfileFollowers {
+    position: relative;
+    font-size: small;
+    margin-top: -5px;
+    /* border: solid; */
+}
+
+.categoryListContainer {
+    position: relative;
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.categoryListContainer::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari and Opera */
+  }
+
+.eachCategoryPair {
+    position: relative;
+    display: flex;
+    background-color: rgb(224, 224, 224);
+    border-radius: 12px;
+    padding-inline: 3px;
+    height: 25px;
+    margin-inline: 5px;
+}
+
+.eachCategoryPair > p {
+    position: relative;
+    height: 25px;
+    margin-inline: -2px;
+    /* border: solid; */
+}
+
+.eachCategoryPair > button {
+    position: relative;
+    white-space: nowrap;
+    font-size: small;
+    height: 25px;
+    background-color: transparent;
+    border: none;
+    text-decoration: underline; 
+    color: rgb(0, 122, 255);
+}
+
+.instagramReviewContainer {
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    height: fit-content;
+    /* border: solid; */
+    /* min-width: 120px; */
+    /* width: fit-content; */
+}
+
+.instagramReviewScore {
+    position: relative;
+    font-size: x-large;
+    /* min-height: 40px; */
+    right: 0px;
+    /* border: solid; */
+}
+
+.instagramReviewContainer > p {
+    position: relative;
+    display: inline;
+    right: 0px;
+    /* border: solid; */
+}
+
+.instagramReviewSeeBtn {
+    position: relative;
+    border: none;
+    margin-top: 0px;
+    background-color: transparent;
+    cursor: pointer;
+    color: rgb(0, 122, 255);
+}
+
+.isLikedShop {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    bottom: 5px;
+    right: 10px;
+}

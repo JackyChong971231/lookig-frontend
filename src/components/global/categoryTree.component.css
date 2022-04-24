@@ -1,0 +1,135 @@
+
+.categoryTreeContainer {
+    position: relative;
+    /* height: 100%; */
+    height: fit-content;
+    width: 100%;
+    /* border: solid; */
+}
+
+.category1Container{
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(240, 240, 240);
+
+}
+
+.category1Container > button {
+    position: relative;
+    border: solid 2px;
+    border-color: rgb(85, 85, 85);
+    border-radius: 15px;
+    height: 30px;
+    margin: 5px 10px 5px 10px;
+    background-color: white;
+    padding-inline: 15px;
+    transition: 0.3s;
+}
+
+.collapsibleCategory > img {
+    position: absolute;
+    width: 100vw;
+    left: 0;
+    height: 100%;
+}
+
+.collapsibleCategory > p{
+    position: relative;
+    display: inline;
+    font-size: x-large;
+    left: 10px;
+    text-shadow: 1px 1px #3d3d3d;
+    font-weight: 400;
+    height: 80px;
+    line-height: 80px;
+}
+
+.collapsibleCategory > input {
+    position: relative;
+    display: inline;
+    margin-left:15px;
+    height: 20px;
+    width: 20px;
+}
+
+.category.title {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    /* background-color: rgb(216, 175, 125); */
+    /* border: 1px; */
+    font-weight: 100%;
+    margin-bottom: 5px;
+    border: none;
+}
+
+.collapsibleCategory {
+    position: relative;
+    left: 0px;
+    padding-left: 0px;
+    background-color: white;
+    color: white;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+  
+.active, .collapsibleCategory:hover {
+    /* background-color: #555; */
+}
+  
+.subCollapsibleCategory {
+    position: relative;
+    /* padding: 0 18px; */
+    display: none;
+    overflow: hidden;
+    transition: 1s;
+    width: 100%;
+    /* border: solid; */
+    /* height: 50px; */
+}
+
+.subCollapsibleCategory > div {
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding-left: 20px;
+    outline: none;
+    border: none;
+    color: rgb(36, 36, 36);
+    height: 40px;
+    text-align: left;
+    background-color: white;
+}
+
+.subCollapsibleCategory > div > p {
+    display: inline;
+    position: relative;
+    height: 40px;
+    width: 100%;
+    /* border: solid; */
+    margin-left: 10px;
+    vertical-align: middle;
+    line-height: 40px;
+    /* border-radius: 100%; */
+}
+
+.subCollapsibleCategory > div > input {
+    display: inline;
+    position: relative;
+    transform: translate(0%, -50%);
+    top: 50%;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    border: solid 2px;
+    border-color: gray;
+    padding: 2px;
+}

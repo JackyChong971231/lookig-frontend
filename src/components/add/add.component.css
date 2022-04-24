@@ -1,0 +1,269 @@
+.addOuterMostContainer {
+    position: relative;
+    min-height: calc(100vh - 140px);
+    width: 100%;
+    transition: 1s;
+    /* border: solid; */
+}
+
+.addOuterMostContainer > h1 {
+    position: relative;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.addShopSubmitBtn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 30px;
+    padding-inline: 20px;
+    background-color: rgb(20, 126, 251);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-right: 20px;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.selectedCategories {
+    position: relative;
+    width: 100%;
+    max-height: fit-content;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+
+.selectedCategories > p {
+    position: relative;
+    height: 35px;
+    width: 100%;
+    margin-left: 20px;
+    margin-top: 10px;
+    /* border: solid; */
+}
+
+.addShopIsSignedInContainer {
+    position: relative;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    /* border: solid; */
+    margin-bottom: 10px;
+    padding-inline: 20px;
+    padding-bottom: 20px;
+    border-bottom: solid 1px;
+    border-bottom-color: gray;
+}
+
+.addShopIsSignedInContainer > button {
+    flex: 1 1 auto;
+    margin-inline: 10px;
+    background-color: transparent;
+    border: solid 2px;
+    height: 30px;
+    border-radius: 15px;
+    border-color: rgb(85, 85, 85);
+    transition: 0.3s;
+}
+
+.addShopIsSignedInContainer > button:active {
+    background-color: rgb(85, 85, 85);
+    color: white;
+}
+
+.isOwnerContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /* transform: translate(-50%, 0%);
+    left: 70%; */
+    /* border: solid; */
+    padding: 10px 20px 0px 20px;
+}
+
+.isOwnerContainer > p{
+    position: relative;
+    height: 30px;
+    flex: 1 1 auto;
+    /* border: solid; */
+}
+
+.isOwnerContainer > input {
+    position: relative;
+    height: 20px;
+    width: 20px;
+    margin-left: 30px;
+    margin-right: 10px;
+    flex: 1 1 auto;
+    top: -10px;
+}
+
+.selectedCategoriesListContainer{
+    position: relative;
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    /* border: solid; */
+    margin-top: -20px;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.selectedCategoriesListContainer::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari and Opera */
+}
+
+.selectedCategoriesDiv {
+    position: relative;
+    height: 35px;
+    line-height: 35px;
+    width: fit-content;
+    padding-right: 40px;
+    border-radius: 17px;
+    top: 0px;
+    margin-left: 20px;
+    text-indent: 10px;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-color: rgb(224, 224, 224);
+}
+
+.selectedCategoriesDiv.cancel {
+    position: absolute;
+    transform: translate(0%, -50%);
+    top: 50%;
+    height: 25px;
+    width: 25px;
+    background-image: url("./cancelBtn1.png");
+    background-repeat: no-repeat;
+    border: none;
+    outline: none;
+    background-size: 25px;
+    background-color: transparent;
+    right: -20px;
+    /* top: -5px; */
+}
+
+.addShopNameInput {
+    position: relative;
+    background-color: rgb(231, 231, 231);
+    border: none;
+    border-radius: 10px;
+    height: 35px;
+    transform: translate(-50%, 0%);
+    left: 50%;
+    width: 340px;
+    outline: none;
+    padding-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    -webkit-appearance: searchfield;
+}
+
+.addShopNameInput::-webkit-search-cancel-button {
+    top: 30px;
+    /* Remove default */
+    -webkit-appearance: none;
+
+    /* Now your own custom styles */
+
+    height: 25px;
+    width: 25px;
+    display: block;
+    background-image: url("./cancelBtn1.png");
+    /* setup all the background tweaks for our custom icon */
+    background-repeat: no-repeat;
+
+    /* icon size */
+    background-size: 25px;
+}
+
+.confirmSubmitContainer {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.confirmSubmitOutside {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+}
+
+.confirmSubmitContent {
+    position: absolute;
+    height: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    -moz-box-shadow: 0px 0px 50px 1px rgba(102, 102, 102, 0.5);
+    -webkit-box-shadow: 0px 0px 50px 1px rgba(102, 102, 102, 0.5);
+    box-shadow: 0px 0px 50px 1px rgba(102, 102, 102, 0.5);
+}
+
+.confirmSubmitContentCloseBtn {
+    position: absolute;
+    margin: 5px;
+    top: 0%;
+    right: 0%;
+    font-size: xx-large;
+    background-color: white;
+    border: none;
+    border-radius: 100%;
+}
+
+.addShopInfo {
+    position: absolute;
+    height: 50%;
+    width: 80%;
+    transform: translate(-50%, 0%);
+    top: 20%;
+    left: 50%;
+}
+
+.addShopInfo > div.selectedCategoriesDiv {
+    margin: 20px;
+    font-size:medium;
+}
+
+.hasPhysicalStoreContainer {
+    position: relative;
+    /* border: solid; */
+    height: fit-content;
+}
+
+.hasPhysicalStoreContainer > p {
+    position: relative;
+    display: inline;
+    /* transform: translate(0%, -50%); */
+    top: 0px;
+    height: 40px;
+    width: fit-content;
+    line-height: 40px;
+    vertical-align: middle;
+    /* border: solid; */
+}
+
+.hasPhysicalStoreContainer > input {
+    position: relative;
+    display: inline;
+    /* transform: translate(0%, -50%);
+    top: 50%; */
+    margin-inline: 10px;
+    height: 20px;
+    width: 20px;
+    padding: 2px;
+    vertical-align: middle;
+}
