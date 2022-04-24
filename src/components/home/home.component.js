@@ -145,7 +145,7 @@ export default class Home extends Component {
   render() {
     return (
       <div className="homeContainer">
-        <button onClick={() => this.function2()}>test function</button>
+        {/* <button onClick={() => this.function2()}>test function</button> */}
         {/* <button onClick={() => this.function2()}>do sth</button> */}
         <header className="jumbotron">
           {/* <p>A website that categorises HKIG shops</p> */}
