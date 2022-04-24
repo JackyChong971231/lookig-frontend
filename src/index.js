@@ -6,6 +6,11 @@ import App from "./App";
 import Candelete from "./candelete";
 import reportWebVitals from './reportWebVitals';
 
+import Amplify, { API } from 'aws-amplify';
+import awsconfig from './aws-exports';
+Amplify.configure(awsconfig);
+API.configure(awsconfig);
+
 ReactDOM.render(
   <BrowserRouter>
     <App />

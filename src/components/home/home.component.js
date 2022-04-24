@@ -6,6 +6,8 @@ import UserService from "../../services/user.service";
 import "./home.component.css"
 import publicService from "../../services/public.service";
 
+import Amplify, { API } from "aws-amplify"
+
 export default class Home extends Component {
   constructor(props) {
     super(props);
@@ -13,7 +15,8 @@ export default class Home extends Component {
     this.state = {
       content: "",
       thisDevice: "",
-      slideIndex: 1
+      slideIndex: 1,
+      amplify_express_api: ""
     };
   }
 
@@ -59,15 +62,30 @@ export default class Home extends Component {
       })
   }
 
+  fetchBackend() {
+    API.get("express","/express", {})
+      .then(response => {
+        console.log(response)
+        this.setState({amplify_express_api: response.success})
+        // return <p>{response.success}</p>
+      })
+      .catch(error => {
+        console.log(error)
+        this.setState({amplify_express_api: error.response})
+        // return <p>{error.response}</p>
+      })
+  }
+
   mostViewed() {
     const mostViewedArray=[]
     mostViewedArray.push(<div className="igProfile"><div></div><iframe width="100%" height="100%" src="https://www.instagram.com/p/CYooXYlpYYu/embed"></iframe></div>);
-    mostViewedArray.push(<div className="igProfile"><div></div><iframe width="100%" height="100%" src="https://www.instagram.com/wwhitetale/?__a=1"></iframe></div>);
+    mostViewedArray.push(<div className="igProfile"><div></div><iframe width="100%" height="100%" src="https://www.instagram.com/p/CYooXYlpYYu/embed"></iframe></div>);
     mostViewedArray.push(<div className="igProfile"><div></div><iframe width="100%" height="100%" src="https://www.instagram.com/p/CYooXYlpYYu/embed"></iframe></div>);
     return mostViewedArray;
   }
 
   componentDidMount() {
+    this.fetchBackend()
     this.showSlides(1)
     UserService.getPublicContent().then(
       response => {
@@ -143,6 +161,7 @@ export default class Home extends Component {
   }
 
   render() {
+    const {amplify_express_api} = this.state;
     return (
       <div className="homeContainer">
         {/* <button onClick={() => this.function2()}>test function</button> */}
@@ -207,7 +226,7 @@ export default class Home extends Component {
         <div className="mostXXXshopsContainer mostViewed">
           {this.mostViewed()}
         </div>
-
+        <p>{amplify_express_api}</p>
 
       </div>
     );

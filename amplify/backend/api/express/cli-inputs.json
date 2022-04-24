@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/express": {
+      "name": "/express",
+      "lambdaFunction": "awsLambdaFunc",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}
